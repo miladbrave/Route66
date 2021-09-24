@@ -12,7 +12,7 @@
     <meta name="keywords" content="Route66,روت 66">
     <meta name="description"
           content="فروش و رهن و اجاره ملک و خودرو در کشورهای ترکیه و قبرس"/>
-    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    <meta name="robots" content="max-snippet:-1 , max-image-preview:large, max-video-preview:-1"/>
     <link rel="canonical" href="http://www.route66ir.com/"/>
     <meta name="subject" content="Route66,روت 66">
     <meta name="copyright" content="Route66,روت 66">
