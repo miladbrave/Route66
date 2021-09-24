@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="icon" href="{{asset('/front/images/icon.png')}}" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('/front/images/icon.png')}}"/>
-    <title>Route66</title>
+    <title>مشاور سرمایه گذاری نگار</title>
     <meta name="keywords" content="Route66,روت 66">
     <meta name="description"
           content="فروش و رهن و اجاره ملک و خودرو در کشورهای ترکیه و قبرس"/>
