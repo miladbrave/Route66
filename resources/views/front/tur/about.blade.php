@@ -20,45 +20,56 @@
                                 <div class="devider"><span></span></div>
                                 <h2>Web sitemize hoşgeldiniz
                                 </h2>
-                                <div class="text">Lorem ipsum dolor sid tempor magna aliqua
+                                <div class="text">Sizin için her zaman en iyisini seçiyoruz
                                 </div>
                             </div>
                             <div class="text-box">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    deserunt mollit anim id est laborum.
+                                <p style="font-size: 11px">
+                                    Negar Yatırım Şirketi, uzun yıllara dayanan başarılı yönetim deneyimlerini (30
+                                    yıllık tecrübesi ile) kullanarak, yatırım, emlak ve araba satışı ve finansal
+                                    hizmetler alanlarında, seçkin uzmanlar ve Farsça danışmanlarla faaliyetlerini
+                                    genişletmiştir. uluslararası ticaret alanındaki konumu. Türkiye ve Kıbrıs
+                                    gayrimenkul sektöründe (konut, ticaret ve ofis) yatırım yapmak, yeni inşa edilmiş
+                                    villaları teslime hazır satın almak ve inşaat halindeki ön satış projelerini satın
+                                    almak için tavsiye vermek, gayrimenkul satın alma ve edinme ile ilgili tüm yasal
+                                    adımları gerçekleştirirken mülkiyet belgeleri ve belediye kaydı Türkiye'de pasaport
+                                    ve daimi ikametgah almak ve bir banka hesabı açmak Negar Yatırım Şirketi'nin
+                                    hizmetlerinin bir parçasıdır. Bu nedenle Türkiye ve Kıbrıs'ta gayrimenkul almak veya
+                                    satmak için herhangi bir işlem yapmadan önce bize danışmanızı ve gelecek
+                                    hayalleriniz için şimdi büyük bir adım atmanızı öneririz. Danışmanlarımız,
+                                    yukarıdaki tüm adımları gerçekleştirirken size eşlik edebilir ve ayrıca size en iyi
+                                    ve en uygun yöntemi sunabilir ve sonunda sizin için güvenli bir satın alma garantisi
+                                    verebilir.
                                 </p>
                             </div>
                             <div class="row features">
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-rent-1"></span>
-                                        <h4><a href="javascript:void(0);">Cost</a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <h4><a href="javascript:void(0);">Mülk</a></h4>
+                                        <div class="text">Gayrimenkul almak, kiralamak ve satmak</div>
                                     </div>
                                 </div>
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-analytics"></span>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <h4><a href="javascript:void(0);">Araba</a></h4>
+                                        <div class="text">Her türlü araba satışı</div>
                                     </div>
                                 </div>
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-home-2"></span>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <h4><a href="javascript:void(0);">Danışmanlık</a></h4>
+                                        <div class="text">Yatırım danışmanlığı</div>
                                     </div>
                                 </div>
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-protect"></span>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum
+                                        <h4><a href="javascript:void(0);">Hizmetler
                                             </a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <div class="text">Hizmet sunumunda çeşitlilik</div>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +81,7 @@
                                                        data-src="/front/images/resource/image-3.jpg" alt=""></figure>
                             <div class="contact-info">
                                 <span class="icon fa fa-phone-volume"></span>
-                                <a href="tel:+8236558625" class="number" style="direction: ltr">+021 12345678</a>
+                                <a href="tel:+8236558625" class="number" style="direction: ltr">+905338307792</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +125,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="3000" data-stop="60">0 </span>
                                 </div>
-                                <div class="counter-title">Şehir ve ülke </div>
+                                <div class="counter-title">Şehir ve ülke</div>
                             </div>
                         </div>
                     </div>
@@ -129,12 +140,13 @@
                             <div class="sec-title">
                                 <div class="devider"><span></span></div>
                                 <h2>Emlak Arama</h2>
-                                <div class="text">Emek ve üzüntü, bazı önemli şeyler eiusmod  elit, sed Kreuzberg ve canlılığını oturmak
+                                <div class="text">Emek ve üzüntü, bazı önemli şeyler eiusmod elit, sed Kreuzberg ve
+                                    canlılığını oturmak
                                 </div>
                             </div>
-                            <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <div class="text-box">Her zevke uygun bir evimiz var. Siz de ev seçiminde kendinize özgü
+                                kriterleriniz ve özellikleriniz varsa bizimle iletişime geçebilir ve projelerimizi
+                                inceleyebilirsiniz.
                             </div>
                         </div>
                     </div>

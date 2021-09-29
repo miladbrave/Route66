@@ -13,7 +13,12 @@
                             </div>
                             <div class="footer-column col-lg-10 col-md-6 col-sm-12">
                                 <hr style="background-color: white;">
-                                <span style="direction: ltr;float: left">Şirketimiz...</span>
+                                <span style="direction: ltr;text-align: left;float: left">
+                                    Yatırım danışmanlığı<br>
+                                    30 yılı aşkın iş tecrübesi ile<br>
+                                    Mülk ve araba alım satımı<br>
+                                    Kıbrıs ve Türkiye'de
+                                </span>
                             </div>
                         </div>
                         <div class="footer-column col-lg-6 col-md-6 col-sm-12">
@@ -22,7 +27,7 @@
                                 <div class="widget-content">
                                     <ul class="contact-list">
                                         <li><span class="fa fa-map-marker-alt"></span>Cyprus..</li>
-                                        <li><span class="fa fa-phone-volume"></span>02112345678 - 02112345678</li>
+                                        <li style="direction: ltr"><span class="fa fa-phone-volume"></span>+905338307792 <br> +989141158193</li>
                                         <li><span class="fa fa-envelope"></span><a href="mailto:info@revel.com">info@revel.com</a>
                                         </li>
                                     </ul>
@@ -38,7 +43,7 @@
                             <div class="footer-widget popular-posts">
                                 <h2 class="widget-title">Emlak</h2>
                                 <div class="widget-content">
-                                    @foreach($products as $product)
+                                    @foreach($products->take(2) as $product)
                                         <div class="post">
                                             <div class="thumb"><a href="{{route('tur.product',["Home",$product->slug])}}">
                                                     @if(isset($product->photos->first()->path))

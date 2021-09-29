@@ -22,17 +22,28 @@
                         <div class="inner-column text-left">
                             <div class="sec-title">
                                 <div class="devider"><span></span></div>
-                                <h2>Wellcome to our website
+                                <h2>Investment consultant
                                 </h2>
-                                <div class="text">Lorem ipsum dolor sid tempor magna aliqua
+                                <div class="text">We always choose the best for you
                                 </div>
                             </div>
                             <div class="text-box">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    deserunt mollit anim id est laborum.
+                                <p style="font-size: 11px;">
+                                    Negar Investment Company, using successful management experiences over many years
+                                    (with 30 years of experience), has expanded its activities in the fields of
+                                    investment, property and car sales and financial services, and with elite experts
+                                    and Persian consultants. بانLanguage has achieved a high position in the field of
+                                    international trade. Providing advice for investing in the real estate sector of
+                                    Turkey and Cyprus (residential, commercial and office), buying newly built villas
+                                    ready for delivery, as well as pre-selling projects under construction, while
+                                    carrying out all legal steps of buying property and obtaining ownership documents
+                                    and municipal registration, Obtaining a passport and permanent residence in Turkey
+                                    and opening a bank account are part of the services of Negar Investment Company.
+                                    Therefore, we suggest that you consult with us before taking any action to buy or
+                                    sell real estate in Turkey and Cyprus, and now take a big step forward for your
+                                    future dreams. Our consultants can accompany you in performing all the above steps
+                                    and also offer you the best and most appropriate method and finally guarantee a safe
+                                    purchase for you.
 
                                 </p>
                             </div>
@@ -40,30 +51,30 @@
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-rent-1"></span>
-                                        <h4><a href="javascript:void(0);">Cost</a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <h4><a href="javascript:void(0);">Property</a></h4>
+                                        <div class="text">Buying, renting and selling real estate</div>
                                     </div>
                                 </div>
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-analytics"></span>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <h4><a href="javascript:void(0);">Car</a></h4>
+                                        <div class="text">Selling all kinds of cars</div>
                                     </div>
                                 </div>
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-home-2"></span>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <h4><a href="javascript:void(0);">Consulting</a></h4>
+                                        <div class="text">Investment consulting</div>
                                     </div>
                                 </div>
                                 <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
                                     <div class="inner-box">
                                         <span class="icon flaticon-protect"></span>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum
+                                        <h4><a href="javascript:void(0);">Services
                                             </a></h4>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur</div>
+                                        <div class="text">Diversity in service delivery</div>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +86,7 @@
                                                        data-src="/front/images/resource/image-3.jpg" alt=""></figure>
                             <div class="contact-info">
                                 <span class="icon fa fa-phone-volume"></span>
-                                <a href="tel:+8236558625" class="number" style="direction: ltr">+021 12345678</a>
+                                <a href="tel:+8236558625" class="number" style="direction: ltr">+905338307792</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +130,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="3000" data-stop="60">0 </span>
                                 </div>
-                                <div class="counter-title">City & country </div>
+                                <div class="counter-title">City & country</div>
                             </div>
                         </div>
                     </div>
@@ -134,12 +145,12 @@
                             <div class="sec-title">
                                 <div class="devider"><span></span></div>
                                 <h2>Property Search</h2>
-                                <div class="text">Lorem ipsum ut labore et dolore magna aliqua.
+                                <div class="text">We have a house for every taste
                                 </div>
                             </div>
-                            <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <div class="text-box">
+                                We have a house for every taste. If you also have your own unique criteria and features
+                                in choosing a house, you can contact us and view our projects to make the best choice.
                             </div>
                         </div>
                     </div>

@@ -700,6 +700,9 @@ img[data-src] {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-header .header-lower .logo img {
@@ -710,7 +713,10 @@ img[data-src] {
 }
 
 .main-header .header-lower .nav-outer {
-    float: left;
+    /*float: left;*/
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .main-header .main-box {
@@ -3445,7 +3451,7 @@ a.ui-button:active, .ui-button:active,
 
 .about-section .about-block {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .about-section .about-block:last-child {
@@ -6144,7 +6150,7 @@ a.ui-button:active, .ui-button:active,
 
 .why-choose-us .info-column .inner-column {
     position: relative;
-    padding: 35px 0 0;
+    padding: 0px 0 0;
 }
 
 .why-choose-us .info-column .sec-title {
@@ -10606,7 +10612,22 @@ a.ui-button:active, .ui-button:active,
 .tur a {
     font-size: 13px !important;
 }
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 1200px;
+}
 
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 1200px;
+}
+.gmap_canvas iframe{
+    width: 1000px;height: 500px;
+}
 @media screen and (max-width: 540px) {
     .feature-column {
         display: none
@@ -10629,7 +10650,7 @@ a.ui-button:active, .ui-button:active,
 
     /*.owl-item{height: 400px}*/
     .owl-item img {
-        height: 450px !important;
+        height: 350px !important;
     }
 
     .pro .image {
@@ -10672,14 +10693,40 @@ a.ui-button:active, .ui-button:active,
     .menu-box {
         background-color: rgba(0, 0, 0, 0.9) !important;
     }
+    .main-footer .footer-column .widget-title {
+        margin-top: 8%!important;}
+
+    .owl-item .imagecustomer{
+        height: 250px!important;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 200px;
+        width: 410px;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 200px;
+        width: 410px;
+    }
+    .gmap_canvas iframe{
+        width: 350px;height: 200px;
+    }
+    .social-icon-four{
+        display: inline-flex;
+    }
 }
 
 .mobile-header .col-xs-9 {
-    width: 80%
+    width: 73%
 }
 
 .mobile-header .col-xs-3 {
-    width: 20%
+    width: 25%
 }
 
 .align {
@@ -10695,16 +10742,8 @@ a.ui-button:active, .ui-button:active,
     border-radius: 10px;
 }
 
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 500px;
-    width: 1200px;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 500px;
-    width: 1200px;
+.falogo{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
 }

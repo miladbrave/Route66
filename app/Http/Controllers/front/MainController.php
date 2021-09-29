@@ -224,6 +224,22 @@ class MainController extends Controller
 
     public function sendmessage(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required',
+            'phone' => 'required|numeric',
+            'description' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
+
+        ], [
+            'name.required' => 'نام را وارد کنید.',
+            'phone.required' => 'شماره تماس را وارد کنید.',
+            'phone.numeric' => 'شماره تماس باید عددی باشد.',
+            'description.required' => 'توضیح پیام را وارد کنید.',
+            'g-recaptcha-response' => [
+                'required' => 'لطفا روی من ربات نیستم کلیک کنید',
+                'captcha' => 'مشکلی پیش آمده است.لطفا بعدا تلاش کنید.',
+            ],
+        ]);
         $message = new Message();
         $message->name = $request->name;
         $message->email = $request->email;

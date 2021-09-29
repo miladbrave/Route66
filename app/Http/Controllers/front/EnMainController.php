@@ -232,6 +232,18 @@ class EnMainController extends Controller
 
     public function sendmessage(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required',
+            'phone' => 'required|numeric',
+            'description' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
+
+        ], [
+            'g-recaptcha-response' => [
+                'required' => 'Please verify that you are not a robot.',
+                'captcha' => 'Captcha error! try again later or contact site admin.',
+            ],
+        ]);
         $message = new Message();
         $message->name = $request->name;
         $message->email = $request->email;
@@ -239,6 +251,6 @@ class EnMainController extends Controller
         $message->description = $request->description;
         $message->save();
 
-        return back()->with('success','پیام شما ارسال شد.');
+        return back()->with('success','Your Message has send successfully');
     }
 }

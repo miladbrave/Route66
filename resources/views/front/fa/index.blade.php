@@ -17,9 +17,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
                 @foreach($sliders->where('number',2) as $slide)
@@ -31,9 +31,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
                 @foreach($sliders->where('number',3) as $slide)
@@ -45,9 +45,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
                 @foreach($sliders->where('number',4) as $slide)
@@ -59,9 +59,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->textfa}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
             </div>
@@ -244,33 +244,32 @@
                             <div class="sec-title">
                                 <div class="devider"><span></span></div>
                                 <h2>درباره ما</h2>
-                                <div class="text">خوش آمدید سایت مشاور املاک و مستغلات</div>
+                                <div class="text">موسسه مشاوره سرمایه گذاری نگار</div>
                             </div>
-
-                            <!-- text Box -->
                             <div class="text-box">
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                <p style="text-align: justify">
+                                    موسسه مشاوره سرمایه گذاری نگار با تكيه بر تجارب و موفقيت هاى مدیریتی و با تمرکز بر
+                                    فعالیت
+                                    خود در زمینه های سرمایه گذاری، خرید ملک و خودرو در کشورهای ترکیه و قبرس مفتخر است با
+                                    همكارى گروه مشاورين متخصص روياى مهاجرت و سرمايه گذارى
+                                    شما را به واقعيت تبديل نماید. ما یاری رسان شما در امر سرمایه گذاری و خرید ملک در
+                                    ترکیه و قبرس هستیم.
+                                </p>
                             </div>
-
-                            <!-- About Block -->
                             <div class="about-block wow fadeInUp">
                                 <div class="inner">
                                     <div class="icon flaticon-layers" style="position:absolute;"></div>
-                                    <h4>کار ما</h4>
-                                    <div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                        استفاده از طراحان گرافیک است.
+                                    <h4> سرمایه گذاری</h4>
+                                    <div class="text">ما شما رو در امر سرمایه گذاری یاری خواهیم کرد.
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- About Block -->
                             <div class="about-block wow fadeInUp">
                                 <div class="inner">
                                     <div class="icon flaticon-bar-chart" style="position:absolute;"></div>
-                                    <h4>دیدگاه ما</h4>
-                                    <div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                        استفاده از طراحان گرافیک است.
+                                    <h4>املاک و خودرو</h4>
+                                    <div class="text">اگر قصد به خرید و فروش ملک و یا خودرو خود را در ترکیه و قبرس
+                                        دارید با ما تماس بگیرید.
                                     </div>
                                 </div>
                             </div>
@@ -284,34 +283,28 @@
                                 <!-- Title Block -->
                                 <div class="title-block col-lg-6 col-md-6 wow fadeIn">
                                     <div class="inner-box">
-                                        <h3>بهترین <br>پیشنهادات املاک </h3>
+                                        <h3>شرکت <br> سرمایه گذاری نگار</h3>
                                     </div>
                                 </div>
-
-                                <!-- Feature-block -->
                                 <div class="feature-block col-lg-6 col-md-6 wow fadeIn" data-wow-delay="400ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-home-insurance"></div>
-                                        <h4><a href="javascript:void(0);">بیمه املاک</a></h4>
-                                        <div class="text">مدیریت املاک</div>
+                                        <h4><a href="javascript:void(0);">سرمایه گذاری</a></h4>
+                                        <div class="text">مدیریت سرمایه گذاری</div>
                                     </div>
                                 </div>
-
-                                <!-- Feature-block -->
                                 <div class="feature-block col-lg-6 col-md-6 order-2 wow fadeIn" data-wow-delay="800ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-home-2"></div>
-                                        <h4><a href="javascript:void(0);">جستجوی املاک</a></h4>
-                                        <div class="text">مدیریت املاک</div>
+                                        <h4><a href="javascript:void(0);">خرید فروش</a></h4>
+                                        <div class="text"> املاک و خودرو</div>
                                     </div>
                                 </div>
-
-                                <!-- Feature-block -->
                                 <div class="feature-block col-lg-6 col-md-6 wow fadeIn" data-wow-delay="1200ms">
                                     <div class="inner-box">
-                                        <div class="icon flaticon-mortgage"></div>
-                                        <h4><a href="javascript:void(0);">تحلیل بازار</a></h4>
-                                        <div class="text">مدیریت املاک</div>
+                                        <div class="icon flaticon-maps-and-flags"></div>
+                                        <h4><a href="javascript:void(0);">کشور مقصد</a></h4>
+                                        <div class="text">ترکیه و قبرس</div>
                                     </div>
                                 </div>
                             </div>
@@ -320,9 +313,6 @@
                 </div>
             </div>
         </section>
-        <!--End About Section -->
-
-        <!-- Property Section -->
         <section class="property-section" style="background-image: url(/front/images/background/1.jpg);">
             <div class="auto-container">
                 <div class="sec-title light text-center">
@@ -330,10 +320,9 @@
                     <h2>جدیدترین املاک</h2>
                     <div class="text">خانه خود را در شهر خود پیدا کنید</div>
                 </div>
-
                 <div class="property-carousel owl-carousel owl-theme">
                     @if(isset($home))
-                        @foreach($home as $pro)
+                        @foreach($home->take(5) as $pro)
                             <div class="property-block">
                                 <div class="inner-box">
                                     <div class="image-box">
@@ -347,7 +336,8 @@
                                                 @else
                                                     <img
                                                         src="images/icons/empty.png"
-                                                        data-src="{{asset('/front/images/resource/house.jpg')}}" style="height: 300px"
+                                                        data-src="{{asset('/front/images/resource/house.jpg')}}"
+                                                        style="height: 300px"
                                                         alt="">
                                                 @endif
                                             </a></figure>
@@ -392,138 +382,138 @@
         </section>
         <!--End Property Section -->
 
-    {{--        <section class="popular-places-section">--}}
-    {{--            <div class="auto-container">--}}
-    {{--                <div class="sec-title text-center">--}}
-    {{--                    <div class="devider"><span></span></div>--}}
-    {{--                    <h2>مکان های معروف</h2>--}}
-    {{--                    <div class="text">خانه رویایی خود را در شهر خود پیدا کنید</div>--}}
-    {{--                </div>--}}
+        {{--        <section class="popular-places-section">--}}
+        {{--            <div class="auto-container">--}}
+        {{--                <div class="sec-title text-center">--}}
+        {{--                    <div class="devider"><span></span></div>--}}
+        {{--                    <h2>مکان های معروف</h2>--}}
+        {{--                    <div class="text">خانه رویایی خود را در شهر خود پیدا کنید</div>--}}
+        {{--                </div>--}}
 
-    {{--                <div class="masonry-items-container clearfix">--}}
-    {{--                    <!-- Portfolio Item -->--}}
-    {{--                    <div class="popular-item masonry-item small-item">--}}
-    {{--                        <div class="image-box">--}}
-    {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
-    {{--                                                       data-src="/front/images/gallery/1.jpg" alt=""></figure>--}}
-    {{--                            <div class="caption-box">--}}
-    {{--                                <h4>اپارتمان</h4>--}}
-    {{--                                <span>15 ملک</span>--}}
-    {{--                            </div>--}}
-    {{--                            <div class="overlay-box">--}}
-    {{--                                <div class="info-box">--}}
-    {{--                                    <h4>اپارتمان</h4>--}}
-    {{--                                    <span class="properties">15 ملک</span>--}}
-    {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
-    {{--                                            class="fa fa-search"></span></a>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
+        {{--                <div class="masonry-items-container clearfix">--}}
+        {{--                    <!-- Portfolio Item -->--}}
+        {{--                    <div class="popular-item masonry-item small-item">--}}
+        {{--                        <div class="image-box">--}}
+        {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
+        {{--                                                       data-src="/front/images/gallery/1.jpg" alt=""></figure>--}}
+        {{--                            <div class="caption-box">--}}
+        {{--                                <h4>اپارتمان</h4>--}}
+        {{--                                <span>15 ملک</span>--}}
+        {{--                            </div>--}}
+        {{--                            <div class="overlay-box">--}}
+        {{--                                <div class="info-box">--}}
+        {{--                                    <h4>اپارتمان</h4>--}}
+        {{--                                    <span class="properties">15 ملک</span>--}}
+        {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
+        {{--                                            class="fa fa-search"></span></a>--}}
+        {{--                                </div>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
 
-    {{--                    <!-- Portfolio Item -->--}}
-    {{--                    <div class="popular-item masonry-item large-item">--}}
-    {{--                        <div class="image-box">--}}
-    {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
-    {{--                                                       data-src="/front/images/gallery/2.jpg" alt=""></figure>--}}
-    {{--                            <div class="caption-box">--}}
-    {{--                                <h4>ویلا</h4>--}}
-    {{--                                <span>7 ملک</span>--}}
-    {{--                            </div>--}}
-    {{--                            <div class="overlay-box">--}}
-    {{--                                <div class="info-box">--}}
-    {{--                                    <h4>ویلا</h4>--}}
-    {{--                                    <span class="properties">7 ملک</span>--}}
-    {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
-    {{--                                            class="fa fa-search"></span></a>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
+        {{--                    <!-- Portfolio Item -->--}}
+        {{--                    <div class="popular-item masonry-item large-item">--}}
+        {{--                        <div class="image-box">--}}
+        {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
+        {{--                                                       data-src="/front/images/gallery/2.jpg" alt=""></figure>--}}
+        {{--                            <div class="caption-box">--}}
+        {{--                                <h4>ویلا</h4>--}}
+        {{--                                <span>7 ملک</span>--}}
+        {{--                            </div>--}}
+        {{--                            <div class="overlay-box">--}}
+        {{--                                <div class="info-box">--}}
+        {{--                                    <h4>ویلا</h4>--}}
+        {{--                                    <span class="properties">7 ملک</span>--}}
+        {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
+        {{--                                            class="fa fa-search"></span></a>--}}
+        {{--                                </div>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
 
-    {{--                    <!-- Portfolio Item -->--}}
-    {{--                    <div class="popular-item masonry-item small-item">--}}
-    {{--                        <div class="image-box">--}}
-    {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
-    {{--                                                       data-src="/front/images/gallery/3.jpg" alt=""></figure>--}}
-    {{--                            <div class="caption-box">--}}
-    {{--                                <h4>خانه</h4>--}}
-    {{--                                <span>50 ملک</span>--}}
-    {{--                            </div>--}}
-    {{--                            <div class="overlay-box">--}}
-    {{--                                <div class="info-box">--}}
-    {{--                                    <h4>خانه</h4>--}}
-    {{--                                    <span class="properties">50 ملک</span>--}}
-    {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
-    {{--                                            class="fa fa-search"></span></a>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
+        {{--                    <!-- Portfolio Item -->--}}
+        {{--                    <div class="popular-item masonry-item small-item">--}}
+        {{--                        <div class="image-box">--}}
+        {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
+        {{--                                                       data-src="/front/images/gallery/3.jpg" alt=""></figure>--}}
+        {{--                            <div class="caption-box">--}}
+        {{--                                <h4>خانه</h4>--}}
+        {{--                                <span>50 ملک</span>--}}
+        {{--                            </div>--}}
+        {{--                            <div class="overlay-box">--}}
+        {{--                                <div class="info-box">--}}
+        {{--                                    <h4>خانه</h4>--}}
+        {{--                                    <span class="properties">50 ملک</span>--}}
+        {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
+        {{--                                            class="fa fa-search"></span></a>--}}
+        {{--                                </div>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
 
-    {{--                    <!-- Portfolio Item -->--}}
-    {{--                    <div class="popular-item masonry-item small-item">--}}
-    {{--                        <div class="image-box">--}}
-    {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
-    {{--                                                       data-src="/front/images/gallery/4.jpg" alt=""></figure>--}}
-    {{--                            <div class="caption-box">--}}
-    {{--                                <h4>رستوران</h4>--}}
-    {{--                                <span>5 ملک</span>--}}
-    {{--                            </div>--}}
-    {{--                            <div class="overlay-box">--}}
-    {{--                                <div class="info-box">--}}
-    {{--                                    <h4>رستوران</h4>--}}
-    {{--                                    <span class="properties">5 ملک</span>--}}
-    {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
-    {{--                                            class="fa fa-search"></span></a>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
+        {{--                    <!-- Portfolio Item -->--}}
+        {{--                    <div class="popular-item masonry-item small-item">--}}
+        {{--                        <div class="image-box">--}}
+        {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
+        {{--                                                       data-src="/front/images/gallery/4.jpg" alt=""></figure>--}}
+        {{--                            <div class="caption-box">--}}
+        {{--                                <h4>رستوران</h4>--}}
+        {{--                                <span>5 ملک</span>--}}
+        {{--                            </div>--}}
+        {{--                            <div class="overlay-box">--}}
+        {{--                                <div class="info-box">--}}
+        {{--                                    <h4>رستوران</h4>--}}
+        {{--                                    <span class="properties">5 ملک</span>--}}
+        {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
+        {{--                                            class="fa fa-search"></span></a>--}}
+        {{--                                </div>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
 
 
-    {{--                    <!-- Portfolio Item -->--}}
-    {{--                    <div class="popular-item masonry-item small-item">--}}
-    {{--                        <div class="image-box">--}}
-    {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
-    {{--                                                       data-src="/front/images/gallery/5.jpg" alt=""></figure>--}}
-    {{--                            <div class="caption-box">--}}
-    {{--                                <h4>کافه</h4>--}}
-    {{--                                <span>5 ملک</span>--}}
-    {{--                            </div>--}}
-    {{--                            <div class="overlay-box">--}}
-    {{--                                <div class="info-box">--}}
-    {{--                                    <h4>کافه</h4>--}}
-    {{--                                    <span class="properties">5 ملک</span>--}}
-    {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
-    {{--                                            class="fa fa-search"></span></a>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
+        {{--                    <!-- Portfolio Item -->--}}
+        {{--                    <div class="popular-item masonry-item small-item">--}}
+        {{--                        <div class="image-box">--}}
+        {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
+        {{--                                                       data-src="/front/images/gallery/5.jpg" alt=""></figure>--}}
+        {{--                            <div class="caption-box">--}}
+        {{--                                <h4>کافه</h4>--}}
+        {{--                                <span>5 ملک</span>--}}
+        {{--                            </div>--}}
+        {{--                            <div class="overlay-box">--}}
+        {{--                                <div class="info-box">--}}
+        {{--                                    <h4>کافه</h4>--}}
+        {{--                                    <span class="properties">5 ملک</span>--}}
+        {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
+        {{--                                            class="fa fa-search"></span></a>--}}
+        {{--                                </div>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
 
-    {{--                    <!-- Portfolio Item -->--}}
-    {{--                    <div class="popular-item masonry-item large-item">--}}
-    {{--                        <div class="image-box">--}}
-    {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
-    {{--                                                       data-src="/front/images/gallery/6.jpg" alt=""></figure>--}}
-    {{--                            <div class="caption-box">--}}
-    {{--                                <h4>مزرعه</h4>--}}
-    {{--                                <span>5 ملک</span>--}}
-    {{--                            </div>--}}
-    {{--                            <div class="overlay-box">--}}
-    {{--                                <div class="info-box">--}}
-    {{--                                    <h4>مزرعه</h4>--}}
-    {{--                                    <span class="properties">5 ملک</span>--}}
-    {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
-    {{--                                            class="fa fa-search"></span></a>--}}
-    {{--                                </div>--}}
-    {{--                            </div>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
-    {{--                </div>--}}
-    {{--            </div>--}}
-    {{--        </section>--}}
+        {{--                    <!-- Portfolio Item -->--}}
+        {{--                    <div class="popular-item masonry-item large-item">--}}
+        {{--                        <div class="image-box">--}}
+        {{--                            <figure class="image"><img src="images/icons/empty.png"--}}
+        {{--                                                       data-src="/front/images/gallery/6.jpg" alt=""></figure>--}}
+        {{--                            <div class="caption-box">--}}
+        {{--                                <h4>مزرعه</h4>--}}
+        {{--                                <span>5 ملک</span>--}}
+        {{--                            </div>--}}
+        {{--                            <div class="overlay-box">--}}
+        {{--                                <div class="info-box">--}}
+        {{--                                    <h4>مزرعه</h4>--}}
+        {{--                                    <span class="properties">5 ملک</span>--}}
+        {{--                                    <a href="images/gallery/1.jpg" class="lightbox-image images-btn">25 عکس <span--}}
+        {{--                                            class="fa fa-search"></span></a>--}}
+        {{--                                </div>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
+        {{--                </div>--}}
+        {{--            </div>--}}
+        {{--        </section>--}}
 
     <!-- Agents Section -->
         <div class="agents-section">
@@ -534,7 +524,7 @@
                     <div class="text">با مشاوران حرفه ای از املاک دیدن کنید</div>
                 </div>
                 <div class="agents-carousel owl-carousel owl-theme">
-                    @foreach($agents as $agent)
+                    @foreach($agents->take(5) as $agent)
                         <div class="agent-block">
                             <div class="inner-box">
                                 <div class="image-box">
@@ -591,14 +581,15 @@
                                     <div class="image-box">
                                         <figure class="image"><a href="{{route('product',["car",$car->slug])}}">
                                                 @if(isset($car->photos->first()->path))
-                                                <img
-                                                    src="images/icons/empty.png"
-                                                    data-src="{{$car->photos->first()->path}}" style="height: 300px"
-                                                    alt="">
+                                                    <img
+                                                        src="images/icons/empty.png"
+                                                        data-src="{{$car->photos->first()->path}}" style="height: 300px"
+                                                        alt="">
                                                 @else
                                                     <img
                                                         src="images/icons/empty.png"
-                                                        data-src="{{asset('/front/images/resource/car.jpg')}}" style="height: 300px"
+                                                        data-src="{{asset('/front/images/resource/car.jpg')}}"
+                                                        style="height: 300px"
                                                         alt="">
                                                 @endif
                                             </a></figure>
@@ -637,8 +628,8 @@
             <div class="auto-container">
                 <div class="sec-title text-center">
                     <div class="devider"><span></span></div>
-                    <h2>خدمات ملک</h2>
-                    <div class="text">ما در حال ارائه بهترین املاک و مستغلات هستیم</div>
+                    <h2>خدمات ما</h2>
+                    <div class="text">هر آنچه شما از ما خواستید.</div>
                 </div>
                 <div class="row">
                     <div class="image-column col-xl-4 col-lg-12 col-md-12 col-sm-12">
@@ -762,6 +753,6 @@
                 </div>
             </div>
         </section>
-    @include('front.fa.layout.footer')
+        @include('front.fa.layout.footer')
     </div>
 @endsection

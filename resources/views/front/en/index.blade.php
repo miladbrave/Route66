@@ -243,34 +243,31 @@
                             <div class="sec-title">
                                 <div class="devider" style="margin-right: 73%"><span></span></div>
                                 <h2 class="text-left">About us</h2>
-                                <div class="text" style="direction: ltr;text-align: left">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do.
+                                <div class="text" style="direction: ltr;text-align: left">Negar Investment Consulting
+                                    Institute
                                 </div>
                             </div>
                             <div class="text-box text-left" style="direction: ltr">
-                                <p>Lorem ipsum dolor sit amet, consectetur
-                                    adipiscinlore magna aliqua.
-                                    Lacus suspendisse faucibus interdum posuere lorem..</p>
+                                <p>Relying on managerial experiences and successes and focusing on its activities in the
+                                    fields of investing, buying real estate and cars in Turkey and Cyprus, Negar
+                                    Investment Consulting Institute is proud to make your dream of immigration and
+                                    investment come true with the cooperation of a group of expert consultants. To
+                                    convert. We help you invest and buy property in Turkey and Cyprus.</p>
                             </div>
                             <div class="about-block wow fadeInUp text-left">
                                 <div class="inner" style="padding: 0px 0px">
-                                    <h4 class="text-left ml-3" style="display: inline-block">sed enim</h4>
+                                    <h4 class="text-left ml-3" style="display: inline-block">Investment</h4>
                                     <div class="icon flaticon-layers" style="display: inline-block"></div>
-                                    <div class="text text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do
-                                        eiusmod tes suspendisse
-                                        faucibm.
+                                    <div class="text text-left">.We will help you invest
                                     </div>
                                 </div>
                             </div>
                             <div class="about-block wow fadeInUp text-left">
                                 <div class="inner" style="padding: 0px 0px">
-                                    <h4 class="text-left ml-3" style="display: inline-block">sed enim</h4>
+                                    <h4 class="text-left ml-3" style="display: inline-block">Real estate and cars</h4>
                                     <div class="icon flaticon-bar-chart" style="display: inline-block"></div>
-                                    <div class="text text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do
-                                        eiusdisse
-                                        fauosuere lorem.
+                                    <div class="text text-left">Contact us if you are planning to buy or sell your
+                                        property or car in Turkey and Cyprus
                                     </div>
                                 </div>
                             </div>
@@ -281,28 +278,28 @@
                             <div class="row no-gutters">
                                 <div class="title-block col-lg-6 col-md-6 wow fadeIn">
                                     <div class="inner-box">
-                                        <h3>Lorem <br> Lorem Ipsum</h3>
+                                        <h3>Company <br> Investor</h3>
                                     </div>
                                 </div>
                                 <div class="feature-block col-lg-6 col-md-6 wow fadeIn" data-wow-delay="400ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-home-insurance"></div>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem Ipsum</div>
+                                        <h4><a href="javascript:void(0);">investment</a></h4>
+                                        <div class="text">Investment management</div>
                                     </div>
                                 </div>
                                 <div class="feature-block col-lg-6 col-md-6 order-2 wow fadeIn" data-wow-delay="800ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-home-2"></div>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem Ipsum</div>
+                                        <h4><a href="javascript:void(0);">Buy and sell</a></h4>
+                                        <div class="text">Real estate and cars</div>
                                     </div>
                                 </div>
                                 <div class="feature-block col-lg-6 col-md-6 wow fadeIn" data-wow-delay="1200ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-mortgage"></div>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem Ipsum</div>
+                                        <h4><a href="javascript:void(0);">کشور مقصد</a></h4>
+                                        <div class="text">Turkey and Cyprus</div>
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +318,7 @@
 
                 <div class="property-carousel owl-carousel owl-theme">
                     @if(isset($home))
-                        @foreach($home as $pro)
+                        @foreach($home->take(5) as $pro)
                             <div class="property-block text-left">
                                 <div class="inner-box">
                                     <div class="image-box">
@@ -437,7 +434,7 @@
 
                 <div class="property-carousel owl-carousel owl-theme">
                     @if(isset($cars))
-                        @foreach($cars as $car)
+                        @foreach($cars->take(5) as $car)
                             <div class="property-block">
                                 <div class="inner-box text-left">
                                     <div class="image-box">
@@ -502,7 +499,7 @@
                                     alt=""></figure>
                         </div>
                     </div>
-                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12 text-left">
                         <div class="inner-column">
                             <!-- Service Block -->
                             <div class="service-block wow fadeInUp">
@@ -535,7 +532,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12 order-3">
+                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12 order-3 text-left">
                         <div class="inner-column">
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
@@ -572,7 +569,7 @@
                  data-stellar-background-ratio="0.5">
             <div class="auto-container">
                 <div class="sec-title light text-center">
-                    <div class="text">Buy or sell your home in seconds.</div>
+                    <div class="text">.Buy or sell your home in seconds</div>
                 </div>
             </div>
         </section>

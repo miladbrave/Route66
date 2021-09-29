@@ -18,7 +18,12 @@
                             </div>
                             <div class="footer-column col-lg-10 col-md-6 col-sm-12">
                                 <hr style="background-color: white;">
-                                <span>شرکت ما...</span>
+                                <span class="text-white">
+                                    مشاوره در امور سرمایه گذاری
+                                    <br>با بیش از 30 سال تجربه کاری
+                                    <br>خرید و فروش ملک و خودرو
+                                    <br>در قبرس و ترکیه
+                                </span>
                             </div>
                         </div>
 
@@ -28,7 +33,7 @@
                                 <div class="widget-content">
                                     <ul class="contact-list">
                                         <li><span class="fa fa-map-marker-alt"></span>قبرس</li>
-                                        <li><span class="fa fa-phone-volume"></span>02112345678 - 02112345678</li>
+                                        <li style="direction: ltr"><span class="fa fa-phone-volume"></span>+905338307792 <br> +989141158193</li>
                                         <li><span class="fa fa-envelope"></span><a href="mailto:info@revel.com">info@revel.com</a>
                                         </li>
                                     </ul>
@@ -43,7 +48,7 @@
                             <div class="footer-widget popular-posts">
                                 <h2 class="widget-title">املاک</h2>
                                 <div class="widget-content">
-                                    @foreach($products as $product)
+                                    @foreach($products->take(2) as $product)
                                         <div class="post">
                                             <div class="thumb"><a href="{{route('product',["Home",$product->slug])}}">
                                                     @if(isset($product->photos->first()->path))
@@ -79,8 +84,6 @@
             </div>
         </div>
     </div>
-
-    <!--Footer Bottom-->
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="inner-container clearfix">

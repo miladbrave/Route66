@@ -12,7 +12,8 @@
     <link href="{{asset('/back/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('/back/css/responsive.css')}}" rel="stylesheet">
     <link href="{{asset('/back/images/favicon.png')}}" type="image/x-icon" rel="shortcut icon">
-    <link href="{{asset('/back/css/dropzone/dropzone.css')}}" rel="stylesheet">
+{{--    <link href="{{asset('/back/css/dropzone/dropzone.css')}}" rel="stylesheet">--}}
+    <link href="{{asset('/back/dist/dropzone.css')}}" rel="stylesheet">
     <link href="{{asset('/back/images/favicon.png')}}" type="image/x-icon" rel="icon">
     <link href="{{asset('/back/css/select2/select2.css')}}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
@@ -139,7 +140,8 @@ $consulut = Cosult::all()->count();
 <script src="{{asset('/back/js/popper.min.js')}}"></script>
 <script src="{{asset('/back/js/jquery-ui.js')}}"></script>
 <script src="{{asset('/back/js/wow.js')}}"></script>
-<script src="{{asset('/back/js/dropzone.js')}}"></script>
+<script src="{{asset('/back/dist/dropzone.js')}}"></script>
+{{--<script src="{{asset('/back/js/dropzone.js')}}"></script>--}}
 <script src="{{asset('/back/js/appear.js')}}"></script>
 <script src="{{asset('/back/js/script.js')}}"></script>
 <script src="{{asset('/back/js/select2/select2.full.min.js')}}"></script>
@@ -155,7 +157,7 @@ $consulut = Cosult::all()->count();
         $(".alert").slideUp(700, function () {
             $(this).remove();
         });
-    }, 3000);
+    }, 5000);
 
     $('#exampleModal').modal('hide');
 </script>

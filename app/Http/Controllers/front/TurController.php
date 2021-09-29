@@ -234,6 +234,22 @@ class TurController extends Controller
 
     public function sendmessage(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required',
+            'phone' => 'required|numeric',
+            'description' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
+
+        ], [
+            'name.required' => 'isim giriniz.',
+            'phone.required' => 'iletişim numarasını girin',
+            'phone.numeric' => 'İletişim numarası sayısal olmalıdır.',
+            'description.required' => 'Mesaj açıklamasını girin.',
+            'g-recaptcha-response' => [
+                'required' => 'Please verify that you are not a robot.',
+                'captcha' => 'Captcha error! try again later or contact site admin.',
+            ],
+        ]);
         $message = new Message();
         $message->name = $request->name;
         $message->email = $request->email;
@@ -241,6 +257,6 @@ class TurController extends Controller
         $message->description = $request->description;
         $message->save();
 
-        return back()->with('success','پیام شما ارسال شد.');
+        return back()->with('success','Mesajınız gönderildi.');
     }
 }

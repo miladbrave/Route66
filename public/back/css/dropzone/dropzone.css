@@ -418,3 +418,30 @@
 		width: 280px;
 	}
 }
+.dropzone .dz-complete .dz-success-mark span, .dropzone .dz-error .dz-error-mark span {
+     display: block;
+
+ }
+.dropzone .dz-complete .dz-success-mark {
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.dropzone .dz-error .dz-success-mark {
+    opacity: 0;
+}
+.dropzone .dz-error .dz-error-mark {
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}

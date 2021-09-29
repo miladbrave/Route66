@@ -180,7 +180,17 @@
 
 	.main-header .header-lower .logo{
 		padding: 5px 0;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
 	}
+
+    .main-header .header-lower .falogo{
+        padding: 5px 0;
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
 
 	.main-footer .upper-column h2 br,
 	.main-header .login-signup{
@@ -659,8 +669,9 @@
 	}
 
 	.about-section .about-block .icon{
+        display: none;
 		position: relative;
-		display: inline-block;
+		/*display: inline-block;*/
 		margin-bottom: 20px;
 	}
 

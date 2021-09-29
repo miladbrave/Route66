@@ -1,13 +1,6 @@
 @extends('front.en.layout.master')
 @section('content')
     @include('front.en.layout.header')
-    @if(Session::has('success'))
-        <div class="container" id="alert">
-            <div class="alert alert-success" style="width: 100%">
-                <div>{{ Session('success') }}</div>
-            </div>
-        </div>
-    @endif
     <section class="page-title" style="background-image:url(/front/images/background/4.jpg)">
         <div class="auto-container">
             <h1>Contact us</h1>
@@ -26,13 +19,19 @@
                             <h2>Contact us</h2>
                             <ul class="contact-info">
                                 <li>
-                                    <p><i class="fa fa-map-marker-alt mr-3 text-dark">
-                                        </i> Turky... </p>
+                                    <p>
+                                        <i class="fa fa-map-marker-alt mr-3 text-dark">
+                                        </i>
+                                        Turky...
+                                        <br>
+                                        Cyprus...
+
+                                    </p>
                                 </li>
                                 <li>
                                     <p><a href="tel:+874561230">
                                             <i class="fa fa-phone-volume mr-3 text-dark">
-                                            </i> +021 12345678</a>
+                                            </i> +905338307792,+989141158193</a>
                                     </p>
                                 </li>
 
@@ -57,33 +56,58 @@
                             </ul>
                         </div>
                     </div>
-
+                    @if(Session::has('success'))
+                        <div class="container" id="alert">
+                            <div class="alert alert-success" style="width: 100%">
+                                <div>{{ Session('success') }}</div>
+                            </div>
+                        </div>
+                    @endif
                     <div class="form-column col-lg-8 col-md-12 col-sm-12">
                         <div class="inner-column">
                             <div class="contact-form">
                                 <div class="title">
                                     <h2 class="text-left">Send message</h2>
                                 </div>
+                                @if ($errors->any())
+                                    <div class="alert alert-danger text-left">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <form method="post" action="{{route('en.sendmessage')}}" id="contact-form">
                                     @csrf
                                     <div class="row clearfix">
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="email" name="email" class="text-left" placeholder="email"
-                                                   required="">
+                                            <input type="email" name="email" class="text-left" placeholder="email">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <input type="text" name="name" class="text-left" placeholder="name"
-                                                   required="">
+                                                   required>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" class="text-left" placeholder="phone">
+                                            <input type="text" name="phone" class="text-left" placeholder="phone" required>
                                         </div>
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea name="description" class="text-left"
+                                            <textarea name="description" class="text-left" required
                                                       placeholder="message"></textarea>
                                         </div>
+                                        {!! NoCaptcha::renderJs() !!}
 
+                                        <div class="col-md-12">
+                                            {!! NoCaptcha::display() !!}
+                                        </div>
+                                        <div class="col-md-6">
+                                            @if ($errors->has('g-recaptcha-response'))
+                                                <span class="help-block">
+                                            <h3 class="text-danger">{{ $errors->first('g-recaptcha-response') }}</h3>
+                                        </span>
+                                            @endif
+                                        </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group text-left">
                                             <button class="theme-btn btn-style-one" type="submit"
                                                     name="submit-form"><span
@@ -120,7 +144,7 @@
 
     <div class="mapouter">
         <div class="gmap_canvas text-center">
-            <iframe width="1000" height="500" id="gmap_canvas"
+            <iframe id="gmap_canvas"
                     src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>

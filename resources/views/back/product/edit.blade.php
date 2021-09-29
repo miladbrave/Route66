@@ -6,6 +6,7 @@
             <div class="comments-tab">
                 <h2>ویرایش ملک</h2>
                 <hr>
+                @include('back.alerts')
                 <div class="row">
                     <div class="properties-box">
                         <div class="inner-container">
@@ -251,12 +252,11 @@
                                                     <div class="col-sm-2" id="photo_{{$photo->id}}"
                                                          style="margin:2%;">
                                                         <img class="img-responsive" src="{{asset($photo->path)}}"
-                                                             alt="image" style="height: 100px">
+                                                             alt="image" style="height: 80px">
                                                         <a href="{{route('photodestroy',$photo->id)}}"
-                                                           class="pull-left small btn btn-danger btn-sm"
+                                                           class="pull-right small badge badge-danger  badge-sm"
                                                            type="submit" style="margin-top: 2%">حذف
                                                         </a>
-
                                                     </div>
                                                 @endforeach
                                             </div>
@@ -339,7 +339,6 @@
 @endsection
 @section('js')
     <script type="text/javascript" src="{{asset('/back/js/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/back/js/dropzone/dropzone.js')}}"></script>
     <script>
         Dropzone.autoDiscover = false;
         var photosGallery = []

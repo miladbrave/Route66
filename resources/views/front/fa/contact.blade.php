@@ -27,11 +27,12 @@
                             <ul class="contact-info">
                                 <li>
                                     <span class="icon fa fa-map-marker-alt"></span>
-                                    <p>ایران , تهران , زعفرانیه </p>
+                                    <p> قبرس..</p>
+                                    <p>ترکیه.. </p>
                                 </li>
                                 <li>
                                     <span class="icon fa fa-phone-volume"></span>
-                                    <p><a href="tel:+874561230">+021 12345678</a></p>
+                                    <p><a href="tel:+874561230">+905338307792 <br> +989141158193</a></p>
                                 </li>
                                 <li>
                                     <span class="icon fa fa-envelope"></span>
@@ -39,16 +40,13 @@
                                 </li>
                                 <li>
                                     <span class="icon fab fa-skype"></span>
-                                    <p>rtl-theme</p>
+                                    <p>route 66</p>
                                 </li>
                             </ul>
                             <ul class="social-icon-four">
                                 <li class="title">ما را دنبال کنید :</li>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,20 +56,44 @@
                                 <div class="title">
                                     <h2>ارسال پیام </h2>
                                 </div>
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <form method="post" action="{{route('sendmessage')}}">
                                     @csrf
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="نام">
+                                        <input type="text" name="name" placeholder="نام (اجباری)" required>
                                     </div>
                                     <div class="form-group">
                                         <input type="email" name="email" placeholder="ایمیل">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="phone" placeholder="تلفن">
+                                        <input type="text" name="phone" placeholder="تلفن (اجباری)" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="description" placeholder="پیام"></textarea>
+                                        <textarea name="description" placeholder="پیام (اجباری)" required></textarea>
                                     </div>
+
+                                    {!! NoCaptcha::renderJs() !!}
+
+                                    <div class="col-md-12">
+                                        {!! NoCaptcha::display() !!}
+                                    </div>
+                                    <div class="col-md-6">
+                                        @if ($errors->has('g-recaptcha-response'))
+                                            <span class="help-block">
+                                            <h3 class="text-danger">{{ $errors->first('g-recaptcha-response') }}</h3>
+                                        </span>
+                                        @endif
+                                    </div>
+
+
                                     <div class="form-group">
                                         <button type="submit" class="theme-btn btn-style-two"><span
                                                 class="btn-title">ارسال</span></button>
@@ -105,22 +127,10 @@
     {{--    </section>--}}
     <div class="mapouter">
         <div class="gmap_canvas text-center">
-            <iframe width="1000" height="500" id="gmap_canvas"
+            <iframe id="gmap_canvas"
                     src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <style>.mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 500px;
-                    width: 1200px;
-                }
 
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 500px;
-                    width: 1200px;
-                }</style>
         </div>
     </div>
     <!-- End Map Section -->

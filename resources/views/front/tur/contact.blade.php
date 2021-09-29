@@ -61,25 +61,45 @@
                                 <div class="title">
                                     <h2 class="text-left">Mesaj gönder</h2>
                                 </div>
+                                @if ($errors->any())
+                                    <div class="alert alert-danger text-left">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <form method="post" action="{{route('tur.sendmessage')}}" id="contact-form">
                                     @csrf
                                     <div class="row clearfix">
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="email" name="email" class="text-left" placeholder="email"
+                                            <input type="email" name="email" class="text-left" placeholder="e-posta"
                                                    required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="name" class="text-left" placeholder="name"
+                                            <input type="text" name="name" class="text-left" placeholder="isim"
                                                    required="">
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" class="text-left" placeholder="phone">
+                                            <input type="text" name="phone" class="text-left" placeholder="telefon">
                                         </div>
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea name="description" class="text-left" placeholder="message"></textarea>
+                                            <textarea name="description" class="text-left" placeholder="İleti"></textarea>
                                         </div>
+                                        {!! NoCaptcha::renderJs() !!}
 
+                                        <div class="col-md-12">
+                                            {!! NoCaptcha::display() !!}
+                                        </div>
+                                        <div class="col-md-6">
+                                            @if ($errors->has('g-recaptcha-response'))
+                                                <span class="help-block">
+                                            <h3 class="text-danger">{{ $errors->first('g-recaptcha-response') }}</h3>
+                                        </span>
+                                            @endif
+                                        </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group text-left">
                                             <button class="theme-btn btn-style-one" type="submit"
                                                     name="submit-form"><span
@@ -116,21 +136,9 @@
 
     <div class="mapouter">
         <div class="gmap_canvas text-center">
-            <iframe width="1000" height="500" id="gmap_canvas"
+            <iframe  id="gmap_canvas"
                     src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <style>.mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 500px;
-                    width: 1200px;
-                }
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 500px;
-                    width: 1200px;
-                }</style>
         </div>
     </div>
     <!-- End Map Section -->

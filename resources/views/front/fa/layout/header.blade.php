@@ -8,15 +8,15 @@
                     <div class="row mobile-header">
                         <div class="col-md-9 col-sm-9 col-xs-9">
                             <ul class="contact-list clearfix">
-                                <li><i class="fa fa-phone-volume"></i> <a href="tel:021-12345678">021-12345678</a></li>
+                                <li style="direction: ltr"><i class="fa fa-phone-volume"></i> +905338307792 | +989141158193</li>
                                 <li><i class="fa fa-envelope"></i><a href="mailto:admin@revel.com">admin@revel.com</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-3 d-flex justify-content-start">
                             <select name="" class="language form-control">
-                                <option value="fa">Fa</option>
-                                <option value="en">En</option>
-                                <option value="tr">Tr</option>
+                                <option value="fa">فارسی</option>
+                                <option value="en">English</option>
+                                <option value="tr">Türkçe</option>
                             </select>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
         <div class="auto-container">
             <div class="main-box clearfix row">
 
-                <div class="nav-outer clearfix col-md-6 d-flex justify-content-start">
+                <div class="nav-outer clearfix col-md-7 d-flex justify-content-center">
                     <!--Mobile Navigation Toggler-->
                     <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
 
@@ -59,15 +59,15 @@
                         </div>
                     </nav>
                 </div>
-                <div class="d-flex justify-content-center col-md-4 col-sm-6 col-xs-6  second">
+                <div class="d-flex justify-content-center col-md-2 col-sm-6 col-xs-6  second">
                     <a href="index.html">
-                        <img src="/front/images/icons/empty.png"
-                             data-src="/front/images/logo/c2.png" alt="" title="">
+{{--                        <img src="/front/images/icons/empty.png"--}}
+{{--                             data-src="/front/images/logo/c2.png" alt="" title="">--}}
                     </a>
                 </div>
-                <div class="logo-outer d-flex justify-content-end col-md-2 col-sm-6 col-xs-6 pull-left">
-                    <div class="logo">
-                        <a href="index.html">
+                <div class="logo-outer d-flex col-md-3 col-sm-6 col-xs-6">
+                    <div class="falogo">
+                        <a href="{{route('home')}}">
                             <img src="/front/images/icons/empty.png"
                                  data-src="/front/images/logo/r5pn.png" alt="" title="">
                         </a>

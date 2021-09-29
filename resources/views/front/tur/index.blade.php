@@ -20,9 +20,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
                 @foreach($sliders->where('number',2) as $slide)
@@ -33,9 +33,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
                 @foreach($sliders->where('number',3) as $slide)
@@ -47,9 +47,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
                 @foreach($sliders->where('number',4) as $slide)
@@ -60,9 +60,9 @@
                             </div>
                         @endif
                         @if(isset($slide->photo->path))
-                        <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
-                             style="position: relative;height: 656px;">
-                            @endif
+                            <img alt="{{$slide->texttur}}" src="{{$slide->photo->path}}"
+                                 style="position: relative;height: 656px;">
+                        @endif
                     </div>
                 @endforeach
             </div>
@@ -243,31 +243,32 @@
                             <div class="sec-title text-left">
                                 <div class="devider"><span></span></div>
                                 <h2>Şirket Bilgisi</h2>
-                                <div class="text" style="direction: ltr;text-align: left">Emek ve üzüntü, bazı önemli
-                                    şeyler eiusmod yapmak
+                                <div class="text" style="direction: ltr;text-align: left">Negar Yatırım Danışmanlık
+                                    Enstitüsü
                                 </div>
                             </div>
                             <div class="text-box">
-                                <p style="direction: ltr;text-align: left">Emek ve üzüntü, bazı önemli şeyler eiusmod
-                                    yapmak, böylece Lorem ipsum dolor, amet consectetur adipiscing elit, sed Kreuzberg
-                                    ve canlılığını oturmak
+                                <p style="direction: ltr;text-align: left">Yönetimsel deneyimlere ve başarılara dayanan,
+                                    Türkiye ve Kıbrıs'ta yatırım, gayrimenkul ve araba satın alma alanındaki
+                                    faaliyetlerine odaklanan Negar Yatırım Danışmanlık Enstitüsü, bir grup iş birliği
+                                    ile göçmenlik ve yatırım hayalinizi gerçeğe dönüştürmekten gurur duyar. uzman
+                                    danışmanlar dönüştürmek. Türkiye ve Kıbrıs'ta yatırım yapmanıza ve mülk satın
+                                    almanıza yardımcı oluyoruz.
                                 </p>
                             </div>
                             <div class="about-block wow fadeInUp text-left">
                                 <div class="inner" style="padding: 0px 0px">
-                                    <h4 class="ml-3" style="display: inline-block">sed enim</h4>
+                                    <h4 class="ml-3" style="display: inline-block">yatırım</h4>
                                     <div class="icon flaticon-layers" style="display: inline-block"></div>
-                                    <div class="text">Emek ve üzüntü, bazı önemli şeyler eiusmod yapmak, böylece Lng
-                                        elit, sed Kreuzberg ve canlılığını oturmak
+                                    <div class="text">Yatırım yapmanıza yardımcı olacağız.
                                     </div>
                                 </div>
                             </div>
                             <div class="about-block wow fadeInUp text-left">
                                 <div class="inner" style="padding: 0px 0px">
-                                    <h4 class="ml-3" style="display: inline-block">sed enim</h4>
+                                    <h4 class="ml-3" style="display: inline-block">emlak ve arabalar</h4>
                                     <div class="icon flaticon-bar-chart" style="display: inline-block"></div>
-                                    <div class="text">Emek ve üzüntü, bazı önemli şeyler eiusmod yapmak, böylece Lng
-                                        elit
+                                    <div class="text">Türkiye ve Kıbrıs'ta mülkünüzü veya arabanızı almayı veya satmayı planlıyorsanız bizimle iletişime geçin.
                                     </div>
                                 </div>
                             </div>
@@ -278,28 +279,28 @@
                             <div class="row no-gutters">
                                 <div class="title-block col-lg-6 col-md-6 wow fadeIn">
                                     <div class="inner-box">
-                                        <h3>Lorem <br> Lorem Ipsum</h3>
+                                        <h3>Şirket <br>Yatırımcı</h3>
                                     </div>
                                 </div>
                                 <div class="feature-block col-lg-6 col-md-6 wow fadeIn" data-wow-delay="400ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-home-insurance"></div>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem Ipsum</div>
+                                        <h4><a href="javascript:void(0);">Yatırım</a></h4>
+                                        <div class="text">Yatırım Yönetimi</div>
                                     </div>
                                 </div>
                                 <div class="feature-block col-lg-6 col-md-6 order-2 wow fadeIn" data-wow-delay="800ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-home-2"></div>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem Ipsum</div>
+                                        <h4><a href="javascript:void(0);">Hedef Ülke</a></h4>
+                                        <div class="text">Türkiye ve Kıbrıs</div>
                                     </div>
                                 </div>
                                 <div class="feature-block col-lg-6 col-md-6 wow fadeIn" data-wow-delay="1200ms">
                                     <div class="inner-box">
                                         <div class="icon flaticon-mortgage"></div>
-                                        <h4><a href="javascript:void(0);">Lorem Ipsum</a></h4>
-                                        <div class="text">Lorem Ipsum</div>
+                                        <h4><a href="javascript:void(0);">Al ve sat</a></h4>
+                                        <div class="text">emlak ve arabalar</div>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +318,7 @@
                 </div>
                 <div class="property-carousel owl-carousel owl-theme">
                     @if(isset($home))
-                        @foreach($home as $pro)
+                        @foreach($home->take(5) as $pro)
                             <div class="property-block text-left">
                                 <div class="inner-box">
                                     <div class="image-box">
@@ -330,7 +331,8 @@
                                                 @else
                                                     <img
                                                         src="images/icons/empty.png"
-                                                        data-src="{{asset('/front/images/resource/house.jpg')}}" style="height: 300px"
+                                                        data-src="{{asset('/front/images/resource/house.jpg')}}"
+                                                        style="height: 300px"
                                                         alt="">
                                                 @endif
                                             </a></figure>
@@ -358,10 +360,12 @@
                                         <h3>
                                             <a href="{{route('tur.product',["Home",$pro->slug])}}">{{$pro->turtitle}}</a>
                                         </h3>
-                                        <div class="text" style="direction: ltr">{!! Str::limit($pro->turdescription,40) !!}</div>
+                                        <div class="text"
+                                             style="direction: ltr">{!! Str::limit($pro->turdescription,40) !!}</div>
                                         <div class="property-price clearfix">
                                             <div class="location"><span
-                                                    class="icon fa fa-map-marker-alt"></span>{{$pro->turcountry}} - {{$pro->turcity}}</div>
+                                                    class="icon fa fa-map-marker-alt"></span>{{$pro->turcountry}}
+                                                - {{$pro->turcity}}</div>
                                             <div class="price">{{number_format($pro->price)}} €</div>
                                         </div>
                                     </div>
@@ -380,7 +384,7 @@
                     <div class="text">Profesyonel danışmanlarla evinizi seçin</div>
                 </div>
                 <div class="agents-carousel owl-carousel owl-theme">
-                    @foreach($agents as $agent)
+                    @foreach($agents->take(5) as $agent)
                         <div class="agent-block">
                             <div class="inner-box">
                                 <div class="image-box">
@@ -484,57 +488,57 @@
                                     alt=""></figure>
                         </div>
                     </div>
-                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12 text-left">
                         <div class="inner-column">
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
                                     <span class="icon flaticon-house"></span>
-                                    <h4><a href="javascript:void(0);">For sell</a></h4>
-                                    <div class="text">There are beautiful houses for sale here.
+                                    <h4><a href="javascript:void(0);">Satılık</a></h4>
+                                    <div class="text">Burada satılık güzel evler var.
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
                                     <span class="icon flaticon-rent"></span>
-                                    <h4><a href="javascript:void(0);">For Rent</a></h4>
-                                    <div class="text">There are beautiful houses for sale here.
+                                    <h4><a href="javascript:void(0);">kiralık</a></h4>
+                                    <div class="text">Burada satılık güzel evler var.
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
                                     <span class="icon flaticon-architecture-and-city"></span>
-                                    <h4><a href="javascript:void(0);">Mortgage</a></h4>
-                                    <div class="text">There are beautiful houses for sale here.
+                                    <h4><a href="javascript:void(0);">İpotek</a></h4>
+                                    <div class="text">Burada satılık güzel evler var.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12 order-3">
+                    <div class="service-column col-xl-4 col-lg-6 col-md-6 col-sm-12 order-3 text-left">
                         <div class="inner-column">
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
                                     <span class="icon flaticon-buyer"></span>
-                                    <h4><a href="javascript:void(0);">Buyer matching</a></h4>
-                                    <div class="text">There are beautiful houses for sale here.
+                                    <h4><a href="javascript:void(0);">alıcı eşleştirme</a></h4>
+                                    <div class="text">Burada satılık güzel evler var.
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
                                     <span class="icon flaticon-analytics"></span>
-                                    <h4><a href="javascript:void(0);">Price analysis</a></h4>
-                                    <div class="text">There are beautiful houses for sale here.
+                                    <h4><a href="javascript:void(0);">Fiyat analizi</a></h4>
+                                    <div class="text">Burada satılık güzel evler var.
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block wow fadeInUp">
                                 <div class="inner-box">
                                     <span class="icon flaticon-house-3"></span>
-                                    <h4><a href="javascript:void(0);">sell</a></h4>
-                                    <div class="text">There are beautiful houses for sale here.
+                                    <h4><a href="javascript:void(0);">satmak</a></h4>
+                                    <div class="text">Burada satılık güzel evler var.
                                     </div>
                                 </div>
                             </div>

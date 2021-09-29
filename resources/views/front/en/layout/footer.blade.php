@@ -13,7 +13,12 @@
                             </div>
                             <div class="footer-column col-lg-10 col-md-6 col-sm-12">
                                 <hr style="background-color: white;">
-                                <span style="direction: ltr;float: left">our company...</span>
+                                <span style="direction: ltr;float: left;text-align: left">
+                                Investment consulting<br>
+                                With more than 30 years of experience<br>
+                                Buying and selling properties and cars<br>
+                                In Cyprus and Turkey<br>
+                                </span>
                             </div>
                         </div>
 
@@ -23,18 +28,15 @@
                                 <div class="widget-content">
                                     <ul class="contact-list">
                                         <li><span class="fa fa-map-marker-alt"></span>Cyprus..</li>
-                                        <li><span class="fa fa-phone-volume"></span>02112345678 - 02112345678</li>
+                                        <li style="direction: ltr"><span class="fa fa-phone-volume"></span>+905338307792 <br> +989141158193</li>
                                         <li><span class="fa fa-envelope"></span><a href="mailto:info@revel.com">info@revel.com</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <!--Big Column-->
                 <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     <div class="row clearfix">
                         <div class="footer-column col-xl-8 col-lg-6 col-md-6 col-sm-12">
@@ -42,7 +44,7 @@
                             <div class="footer-widget popular-posts">
                                 <h2 class="widget-title">Real Estate</h2>
                                 <div class="widget-content">
-                                    @foreach($products as $product)
+                                    @foreach($products->take(2) as $product)
                                         <div class="post">
                                             <div class="thumb"><a href="{{route('product',["Home",$product->slug])}}">
                                                     @if(isset($product->photos->first()->path))
@@ -58,8 +60,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!--Footer Column-->
                         <div class="footer-column col-xl-4 col-lg-6 col-md-6 col-sm-12">
                             <div class="footer-widget links-widget">
                                 <h2 class="widget-title">links</h2>
@@ -79,8 +79,6 @@
             </div>
         </div>
     </div>
-
-    <!--Footer Bottom-->
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="inner-container clearfix">

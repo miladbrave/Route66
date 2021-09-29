@@ -10,6 +10,7 @@ use App\Productcomplete;
 use App\Productproperty;
 use App\Property;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class HomeProductController extends Controller
 {
@@ -29,6 +30,35 @@ class HomeProductController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'faname' => 'required',
+            'type' => 'required',
+            'facountry' => 'required',
+            'facity' => 'required',
+            'sellstatus' => 'required',
+            'price' => 'required',
+            'encountry' => 'required',
+            'encity' => 'required',
+            'enname' => 'required',
+            'turcountry' => 'required',
+            'turcity' => 'required',
+            'turname' => 'required',
+            'meter' => 'required',
+        ], [
+            'faname.required' => 'عنوان ملک را وارد کنید.',
+            'type.required' => 'نوع ملک را وارد کنید.',
+            'facountry.required' => 'کشور را وارد کنید.',
+            'facity.required' => 'شهر را وارد کنید.',
+            'sellstatus.required' => 'وضعیت ملک را وارد کنید.',
+            'price.required' => 'قیمت را وارد کنید.',
+            'encountry.required' => 'کشور(انگلیسی) را وارد کنید.',
+            'encity.required' => 'شهر(انگلیسی) را وارد کنید.',
+            'enname.required' => 'عنوان(انگلیسی) را وارد کنید.',
+            'turcountry.required' => 'کشور(ترکی) را وارد کنید.',
+            'turcity.required' => 'شهر(ترکی) را وارد کنید.',
+            'turname.required' => 'عنوان(ترکی) را وارد کنید.',
+            'meter.required' => 'متراژ را وارد کنید.',
+        ]);
         $product = new Product();
         $product->title = $request->faname;
         $product->slug = $this->make_slug($request->faname);;
@@ -129,6 +159,36 @@ class HomeProductController extends Controller
 
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'faname' => 'required',
+            'type' => 'required',
+            'facountry' => 'required',
+            'facity' => 'required',
+            'sellstatus' => 'required',
+            'price' => 'required',
+            'encountry' => 'required',
+            'encity' => 'required',
+            'enname' => 'required',
+            'turcountry' => 'required',
+            'turcity' => 'required',
+            'turname' => 'required',
+            'meter' => 'required',
+        ], [
+            'faname.required' => 'عنوان ملک را وارد کنید.',
+            'type.required' => 'نوع ملک را وارد کنید.',
+            'facountry.required' => 'کشور را وارد کنید.',
+            'facity.required' => 'شهر را وارد کنید.',
+            'sellstatus.required' => 'وضعیت ملک را وارد کنید.',
+            'price.required' => 'قیمت را وارد کنید.',
+            'encountry.required' => 'کشور(انگلیسی) را وارد کنید.',
+            'encity.required' => 'شهر(انگلیسی) را وارد کنید.',
+            'enname.required' => 'عنوان(انگلیسی) را وارد کنید.',
+            'turcountry.required' => 'کشور(ترکی) را وارد کنید.',
+            'turcity.required' => 'شهر(ترکی) را وارد کنید.',
+            'turname.required' => 'عنوان(ترکی) را وارد کنید.',
+            'meter.required' => 'متراژ را وارد کنید.',
+        ]);
+
         $product = Product::findOrFail($id);
         $product->title = $request->faname;
         $product->slug = $this->make_slug($request->faname);;
@@ -172,9 +232,7 @@ class HomeProductController extends Controller
         $productcomplete->floor = $request->floor;
         $productcomplete->heating = $request->heating;
         $productcomplete->save();
-
         $productproperty = Productproperty::where('product_id', $id)->get();
-
         if ($request->selectMultiplefa) {
             $tests = $productproperty->where('language', 'fa');
             foreach ($tests as $test) {
@@ -196,7 +254,6 @@ class HomeProductController extends Controller
                 }
             }
         }
-
         if ($request->selectMultipleen) {
             $tests = $productproperty->where('language', 'en');
             foreach ($tests as $test) {
@@ -218,7 +275,6 @@ class HomeProductController extends Controller
                 }
             }
         }
-
         if ($request->selectMultipletur) {
             $tests = $productproperty->where('language', 'tur');
             foreach ($tests as $test) {
@@ -260,7 +316,13 @@ class HomeProductController extends Controller
         $uploadfile = $request->file('file');
         $filename = time() . $uploadfile->getClientOriginalName();
         $original_name = $uploadfile->getClientOriginalName();
-        $uploadfile->move('photo', $filename);
+        $image = Image::make($uploadfile);
+        $upload_path = public_path('/photo/');
+        $image->resize(580, null, function ($constraint) {
+            $constraint->aspectRatio();
+        })->save( $upload_path.$filename ,100);
+
+//        $uploadfile->move('photo', $filename);
         $photo = new Photo();
         $photo->original_name = $original_name;
         $photo->path = $filename;
@@ -277,11 +339,11 @@ class HomeProductController extends Controller
         $filename =  $request->get('filename');
         $photo = Photo::where('original_name',$filename)->latest()->first();
         if (isset($photo)) {
-            unlink(getcwd() . $photo->path);
+            unlink(public_path() . $photo->path);
             $photo->delete();
             return "success";
         }
-        return $filename;
+        return "failed";
     }
 
     public function photodestroy($id)
