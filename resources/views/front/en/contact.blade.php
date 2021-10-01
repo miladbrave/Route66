@@ -45,7 +45,7 @@
 
                                 <li>
                                     <p><i class=" fab fa-skype mr-3 text-dark">
-                                        </i>route 66 </p>
+                                        </i>Negar </p>
                                 </li>
                             </ul>
 

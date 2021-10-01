@@ -110,7 +110,7 @@
             <div class="auto-container">
                 <div class="sec-title light text-center">
                     <div class="text">Buy or sell your home in minute</div>
-                    <h2>Real Estate Agent</h2>
+{{--                    <h2>Real Estate Agent</h2>--}}
                 </div>
             </div>
         </section>

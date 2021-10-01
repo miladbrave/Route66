@@ -7,9 +7,11 @@
                     <div class="row">
                         <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                             <div class="footer-logo text-center">
-                                <figure class="image"><a href="index.html"><img src="images/icons/empty.png"
-                                                                                data-src="/front/images/logo/r5pn - Copy.png"
-                                                                                alt=""  style="width: 50%;height: 100px"></a></figure>
+                                <figure class="image">
+                                    <a href="{{route('en.home')}}"><img src="images/icons/empty.png"
+{{--                                            data-src="/front/images/logo/r5pn - Copy.png"--}}
+                                            data-src=""
+                                            alt=""  style="width: 50%;height: 100px"></a></figure>
                             </div>
                             <div class="footer-column col-lg-10 col-md-6 col-sm-12">
                                 <hr style="background-color: white;">
@@ -83,7 +85,7 @@
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <div class="copyright-text">
-                    <p> <a href="http://i7v.ir/">© 2021 - Route 66</a></p>
+                    <p> <a href="">© 2021 - Route 66</a></p>
                 </div>
             </div>
         </div>

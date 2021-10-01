@@ -83,7 +83,7 @@
             <div class="auto-container">
                 <div class="sec-title light text-center">
                     <div class="text">در چند دقیقه خانه خود انتخاب و بخرید.</div>
-                    <h2 style="font-family: 'Times New Roman',sans-serif">Route 66</h2>
+{{--                    <h2 style="font-family: 'Times New Roman',sans-serif;color: red">شرکت سرمایه گذاری نگار</h2>--}}
                 </div>
             </div>
         </section>

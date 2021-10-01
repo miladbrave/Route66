@@ -40,8 +40,9 @@
                 <div class="logo-outer d-flex text-right col-md-3 col-sm-6 col-xs-6 pull-left">
                     <div class="logo">
                         <a href="{{route('tur.home')}}">
-                            <img src="/front/images/icons/empty.png"
-                                 data-src="/front/images/logo/r5pn.png" alt="" title="">
+{{--                            <img src="/front/images/icons/empty.png"--}}
+{{--                                 data-src="/front/images/logo/r5pn.png" --}}
+{{--                                 alt="" title="">--}}
                         </a>
                     </div>
                 </div>

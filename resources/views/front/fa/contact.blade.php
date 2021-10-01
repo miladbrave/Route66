@@ -40,7 +40,7 @@
                                 </li>
                                 <li>
                                     <span class="icon fab fa-skype"></span>
-                                    <p>route 66</p>
+                                    <p>Negar</p>
                                 </li>
                             </ul>
                             <ul class="social-icon-four">

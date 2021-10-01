@@ -1,13 +1,6 @@
 @extends('front.tur.layout.master')
 @section('content')
     @include('front.tur.layout.header')
-    @if(Session::has('success'))
-        <div class="container" id="alert">
-            <div class="alert alert-success" style="width: 100%">
-                <div>{{ Session('success') }}</div>
-            </div>
-        </div>
-    @endif
     <section class="page-title" style="background-image:url(/front/images/background/4.jpg)">
         <div class="auto-container">
             <h1>Bize Ulaşın</h1>
@@ -43,7 +36,7 @@
                                 </li>
                                 <li>
                                     <p><i class=" fab fa-skype mr-3 text-dark">
-                                        </i>route 66 </p>
+                                        </i>Negar </p>
                                 </li>
                             </ul>
 
@@ -61,6 +54,13 @@
                                 <div class="title">
                                     <h2 class="text-left">Mesaj gönder</h2>
                                 </div>
+                                @if(Session::has('success'))
+                                    <div class="container" id="alert">
+                                        <div class="alert alert-success" style="width: 100%">
+                                            <div>{{ Session('success') }}</div>
+                                        </div>
+                                    </div>
+                                @endif
                                 @if ($errors->any())
                                     <div class="alert alert-danger text-left">
                                         <ul>

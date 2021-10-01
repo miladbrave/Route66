@@ -41,7 +41,8 @@
                     <div class="logo">
                         <a href="{{route('en.home')}}">
                             <img src="/front/images/icons/empty.png"
-                                 data-src="/front/images/logo/r5pn.png" alt="" title="">
+{{--                                 data-src="/front/images/logo/r5pn.png" --}}
+                                 alt="" title="">
                         </a>
                     </div>
                 </div>

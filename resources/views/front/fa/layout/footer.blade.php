@@ -10,7 +10,8 @@
                                 <figure class="image text-center">
                                     <a href="{{route('home')}}" style="align-content: center">
                                         <img src="images/icons/empty.png"
-                                               data-src="/front/images/logo/r5pn - Copy.png"
+                                               data-src=""
+{{--                                               data-src="/front/images/logo/r5pn - Copy.png"--}}
                                                    style="width: 50%;height: 100px;"
                                         >
                                     </a>
